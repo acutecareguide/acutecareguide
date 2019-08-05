@@ -1,0 +1,515 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Tayside Acute Care Guide},
+            pdfauthor={Fergus Taylor},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Tayside Acute Care Guide}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Fergus Taylor}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019-08-03}
+
+\usepackage{booktabs}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\StringTok{"banner-acute-care-guide.jpg"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics[width=1\linewidth]{banner-acute-care-guide}
+
+JANUARY 21, 2013
+
+\hypertarget{welcome}{%
+\chapter*{Welcome!}\label{welcome}}
+\addcontentsline{toc}{chapter}{Welcome!}
+
+BY PAUL FETTES
+
+This guide is aimed at medical students and junior doctors to enable them to know what to do in an acute situation. It is the culmination of a lot of work by a lot of people. It is designed for use in Tayside and has many specific protocols and contact numbers for that reason, but many of the approaches described are generic and it will have much wider application.
+
+Please use this guide with care and a healthy dose of common sense. It should not be relied upon to replace clinical knowlege or experience and the first thing you should do in many of the situations is call for senior help.
+
+Your feedback is vital to the development of this guide.
+Please contact me via the feedback page if you have any feedback, if links don't work or are out of date, if anything is missing, or if you can think of a way of improving it.
+
+\hypertarget{resuscitation}{%
+\chapter{Resuscitation}\label{resuscitation}}
+
+\hypertarget{advanced-life-support}{%
+\section{Advanced Life Support}\label{advanced-life-support}}
+
+\hypertarget{major-incident}{%
+\section{Major Incident}\label{major-incident}}
+
+\hypertarget{haemodynamically-unstable-polytrauma-code-red}{%
+\section{Haemodynamically Unstable Polytrauma (Code Red)}\label{haemodynamically-unstable-polytrauma-code-red}}
+
+\hypertarget{adult-massive-haemorrhage-policy}{%
+\section{Adult Massive Haemorrhage Policy}\label{adult-massive-haemorrhage-policy}}
+
+\hypertarget{reversing-oral-anticoagulants-in-massive-haemorrhage}{%
+\section{Reversing oral anticoagulants in massive haemorrhage}\label{reversing-oral-anticoagulants-in-massive-haemorrhage}}
+
+\hypertarget{airprob}{%
+\chapter{Airway Problems}\label{airprob}}
+
+\hypertarget{emergency-contacts}{%
+\section{Emergency Contacts}\label{emergency-contacts}}
+
+\hypertarget{airway-assessment}{%
+\section{Airway Assessment}\label{airway-assessment}}
+
+\hypertarget{threaten-the-airway}{%
+\section{Threaten the Airway}\label{threaten-the-airway}}
+
+\hypertarget{ent-emergencies}{%
+\section{ENT Emergencies}\label{ent-emergencies}}
+
+\hypertarget{breath}{%
+\chapter{Breathing}\label{breath}}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\hypertarget{useful-contacts}{%
+\section{Useful Contacts}\label{useful-contacts}}
+
+\hypertarget{respiratory-emergencies}{%
+\section{Respiratory Emergencies}\label{respiratory-emergencies}}
+
+\hypertarget{non-invasive-ventilation-niv}{%
+\section{Non-invasive Ventilation (NIV)}\label{non-invasive-ventilation-niv}}
+
+\hypertarget{how-to-set-up-niv-extracted-from-bts-guideline}{%
+\section{How to set up NIV (extracted from BTS guideline)}\label{how-to-set-up-niv-extracted-from-bts-guideline}}
+
+\hypertarget{tuberculosis}{%
+\section{Tuberculosis}\label{tuberculosis}}
+
+\hypertarget{pneumothorax}{%
+\section{Pneumothorax}\label{pneumothorax}}
+
+\hypertarget{haemopneumothorax-haemothorax}{%
+\section{Haemopneumothorax (haemothorax)}\label{haemopneumothorax-haemothorax}}
+
+\hypertarget{non-respiratory-causes-of-respiratory-compensation}{%
+\section{Non Respiratory causes of respiratory compensation}\label{non-respiratory-causes-of-respiratory-compensation}}
+
+\hypertarget{assessment-of-breathing}{%
+\section{Assessment of Breathing}\label{assessment-of-breathing}}
+
+\hypertarget{cardiovasc}{%
+\chapter{Cardiology and Vascular}\label{cardiovasc}}
+
+Cardiology and Vascular
+Cardiology
+Acute pulmonary oedema
+Artrial Fibrillation Management
+Management of device patients
+Optimal Reperfusion Therapy (AMU)
+Optimal Reperfusion Therapy (PRI)
+Shock and Sepsis
+Emergency Contact Numbers
+Definition of shock
+General approach to shock
+Cardiogenic Shock
+Severe Sepsis \& Septic Shock
+Hypovolaemic Shock
+Anaphylactic Shock
+SEPSIS Six Bundle
+Antibiotic Man
+Vascular
+Acute Limb Ischaemia
+Acute Thoracic Aortic Dissection
+Ruptured Abdominal Aortic Aneurysm
+Vascular Antibiotic Policy
+Adult Massive Haemorrhage Policy
+Reversing oral anticoagulants in massive haemorrhage
+Fresh Frozen Plasma (FFP) Cryo Guideline
+Platelet Transfusion Guideline
+
+\hypertarget{neuromfe}{%
+\chapter{Neurology / MFE}\label{neuromfe}}
+
+Meningitis
+Management of Acute Stroke
+Management of Epileptic Seizure
+Suspected Spinal Cord Compression
+Seizures in a Known Epileptic
+Delirium
+Dysphagia
+
+\hypertarget{renal-endocrine}{%
+\chapter{Renal \& Endocrine}\label{renal-endocrine}}
+
+Review Medication
+Urinary tract infection
+Metabolic acidosis
+Recognition of AKI
+AKI Guidelines
+Management of contrast-induced nephropathy
+DKA
+HHS
+Hypoglycaemia
+Hyperkalaemia
+Hypokalaemia
+Hyponatraemia
+Hypocalcaemia
+Addisonian crisis
+Thyrotoxicosis
+Phaeochromocytoma
+
+\hypertarget{obsandgynae}{%
+\chapter{Obstetrics \& Gynaecological}\label{obsandgynae}}
+
+Obstetric Emergency Contacts
+Ante-partum Haemorrhage (APH)
+Post Partum Haemorrhage (PPH)
+Severe Preeclampsia / Eclampsia
+Sepsis in Obstetrics
+Shoulder Dystocia
+Maternal Collapse
+Cord Prolapse
+Breech in Labour
+Uterine Inversion
+
+\hypertarget{psychemerg}{%
+\chapter{Psychiatric Emergencies}\label{psychemerg}}
+
+Introduction
+Contacts
+Psychiatric Assessment
+Common Presentations
+Deliberate self-harm / Attempted Suicide
+Schizophrenia
+Depression
+Drugs and Alcohol
+Delirium
+Mental Health Act
+Additional Information
+
+\hypertarget{surg}{%
+\chapter{Surgical}\label{surg}}
+
+General / Trauma Surgery by Justyna Szczachor \& Aaron Quyn
+
+Acute Pancreatitis
+Assessment of severity
+Management of gallstones in gallstone pancreatitis
+Abdominal trauma
+Blunt abdominal trauma
+Penetrating abdominal trauma
+Thoracic trauma
+Rib fractures
+Peritonitis
+Significant Lower GI Bleed
+Massive Acute Rectal Bleeding
+Vascular Surgery by Stuart Suttie
+ENT Surgery by Stephen Jones
+Contacts
+Epistaxis
+Orbital Cellulitis
+Throat
+Sore Throat
+Quinsy
+Glandular Fever
+Epiglottitis / Supraglottitis
+Stridor
+Post-Tonsillectomy Haemorrhage
+
+\hypertarget{pain}{%
+\chapter{Pain}\label{pain}}
+
+by Mark Henderson
+
+Pain
+Key Contacts
+Background Information
+Types of pain
+How to assess a patient in pain
+Management of acute pain
+Common analgesics for use in adult patients
+Non-opioid analgesics
+Common opioid analgesics
+Opioid titration and Post-operative nausea guideline
+Guidelines for opioid use
+Opioid conversion
+Approximate opioid equivalence chart
+Managing opioid side effects
+Opioid toxicity
+Excessive sedation and respiratory arrest
+Itch
+Constipation
+Other analgesics and adjuvant therapies
+Management of neuropathic pain
+Patient Controlled Analgesia
+Setting up a PCA
+PCA Prescription
+PCA Pit-falls
+PCA Troubleshooting
+PCA Troubleshooting Algorithm
+PCA Morphine step down
+Epidural analgesia
+Background information
+Complications
+Common problems
+Hypotension
+Inadequate analgesia
+High sensory block
+Dense motor block
+Leaking epidural
+Epidural disconnection
+Epidural falling out
+Urinary retention
+Evolution of other medical problems
+How to assess a patient with an epidural
+Resources and further reading
+
+\hypertarget{death}{%
+\chapter{Death}\label{death}}
+
+by Justyna Szczachor, Iain Kennedy \& Karen Pearson
+
+Useful Contacts
+Deaths of Patients
+Confirming Death
+Breaking Bad News
+Documenting Death
+Coping with death
+
+\hypertarget{poisions}{%
+\chapter{Poisons}\label{poisions}}
+
+by Gareth Patton
+
+TOXBASE
+
+Antidotes
+Background
+Decontamination
+Elimination
+Management
+Resources
+Summary
+
+\hypertarget{majinc}{%
+\chapter{Major Incident}\label{majinc}}
+
+Haemodynamically Unstable Polytrauma (Code Red)
+Patient process
+Massive Transfusion/Blood Loss Algorithm
+Adult Massive Haemorrhage Policy
+Platelet Transfusion Guideline
+Reversing oral anticoagulants in massive haemorrhage
+Fresh Frozen Plasma (FFP) Cryo Guideline
+
+\hypertarget{practproc}{%
+\chapter{Practical Procedures}\label{practproc}}
+
+by Karen Pearson
+
+General Tips
+Access \& invasive monitoring
+Difficult Access (including Femoral Stab)
+Arterial line insertion
+Central line insertion
+Samples for Investigation
+Pleural tap/needle thoracocentesis
+Ascitic tap/drain insertion
+Lumbar puntcure
+Respiratory
+Chest drain insertion
+Other
+Urethral Catheterisation
+Nasogastric tube insertion
+Resources
+
+\hypertarget{calc}{%
+\chapter{Calculations}\label{calc}}
+
+\hypertarget{paeds}{%
+\chapter{Paediatrics}\label{paeds}}
+
+Emergency Contacts
+Anaesthetic and Transfer
+Cardiovascular
+Cardiac Arrest
+Arrhythmia
+Bradycardia Algorithm
+SVT Algorithm
+Ventricular Tachycardia Algorithm
+Burns Management
+Fluid Resuscitation
+Paediatric Endocrine
+Adrenal Crises
+DKA
+Hypoglycaemia
+Infectious Diseases
+Meningococcal Disease Management
+Paediatric Lumbar Puncture
+Paediatric Neurology
+Status Epilepticus Algorithm
+Opthalmology
+Orbital Cellulitis Management
+Respiratory
+Acute Athsma Exacerbation Algorithm
+Anaphlaxis Algorithm
+Bronchiolitis Management
+Upper Airway Obstruction Algorithm
+Viral Croup Management
+
+\hypertarget{infection}{%
+\chapter{Infection}\label{infection}}
+
+Tayside Formulary
+
+Antibiotic Man
+
+\hypertarget{feedback}{%
+\chapter{Feedback}\label{feedback}}
+
+Your feedback is vital to the development of this guide. Please contact us if links don't work or are out of date, if anything is missing and needs to be added, or if you can think of any other way of improving it below. Thank you.
+
+\hypertarget{credits}{%
+\chapter{Credits}\label{credits}}
+
+Chris Kennedy, TILT setup platform and website.
+
+Andrew Melvin has contributed to the editing, design and content of this site.
+
+Kirsty McNeil has provided highly imaginative illustrations for many of the sections.
+
+Jessica Thompson did the wonderful drawings of aortic dissection in the vascular surgery section.
+
+Christopher McCann developed App on iOS and Android.
+
+\bibliography{book.bib,packages.bib}
+
+
+\end{document}

@@ -1,0 +1,36 @@
+--- 
+title: "Tayside Acute Care Guide"
+author: ""
+date: ""
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "For Medical Students & Doctors"
+---
+
+# {-}
+
+```{r echo=FALSE, out.width = "100%"}
+knitr::include_graphics("banner-acute-care-guide.jpg")
+```
+
+BY PAUL FETTES
+
+JANUARY 21, 2013
+
+This guide is aimed at medical students and junior doctors to enable them to know what to do in an acute situation. It is the culmination of a lot of work by a lot of people. It is designed for use in Tayside and has many specific protocols and contact numbers for that reason, but many of the approaches described are generic and it will have much wider application.
+
+Please use this guide with care and a healthy dose of common sense. It should not be relied upon to replace clinical knowlege or experience and the first thing you should do in many of the situations is call for senior help.
+
+Your feedback is vital to the development of this guide.
+Please contact me via the feedback page if you have any feedback, if links don’t work or are out of date, if anything is missing, or if you can think of a way of improving it.
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+Sys.setenv(TZ='GMT')
+```

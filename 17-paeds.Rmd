@@ -1,0 +1,29 @@
+# Paediatrics {#paeds}
+
+Emergency Contacts
+Anaesthetic and Transfer
+Cardiovascular
+Cardiac Arrest
+Arrhythmia
+Bradycardia Algorithm
+SVT Algorithm
+Ventricular Tachycardia Algorithm
+Burns Management
+Fluid Resuscitation
+Paediatric Endocrine
+Adrenal Crises
+DKA
+Hypoglycaemia
+Infectious Diseases
+Meningococcal Disease Management
+Paediatric Lumbar Puncture
+Paediatric Neurology
+Status Epilepticus Algorithm
+Opthalmology
+Orbital Cellulitis Management
+Respiratory
+Acute Athsma Exacerbation Algorithm
+Anaphlaxis Algorithm
+Bronchiolitis Management
+Upper Airway Obstruction Algorithm
+Viral Croup Management
