@@ -18,5 +18,5 @@ Project resources:
 
 This project is built on Bookdown. The full documentation is available at [bookdown.org](https://bookdown.org/yihui/bookdown). <br> You might want to read "Get Started" for help writing your own book.
 
-The source of **Tayside Acute Care Guide** can be found in [docs](https://github.com/fergustaylor/acutecareguide/docs). 
+The source of **Tayside Acute Care Guide** can be found in [docs](https://github.com/fergustaylor/acutecareguide/tree/master/docs). 
 <br> Please feel free to share feedback using [Github issues](https://github.com/fergustaylor/acutecareguide/issues).
