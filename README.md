@@ -12,10 +12,8 @@ This is a project to update [**Tayside Acute Care Guide**](https://blogs.cmdn.du
 <br>
 <br>
 
-Project resources come from Dundee University:
+Project resources:
 - [Graphics](https://www.dundee.ac.uk/brand/toolkit/logo/)
-
-Other Tayside resources:
 - [Junior Doctor's Handbook](https://www.nhstayside.scot.nhs.uk/WorkingWithUs/InformationforStaffandClinicians/PROD_231331/index.htm)
 
 This project is built on Bookdown. The full documentation is available at [bookdown.org](https://bookdown.org/yihui/bookdown). <br> You might want to read "Get Started" for help writing your own book.
