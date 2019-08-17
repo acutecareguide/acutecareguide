@@ -4,7 +4,7 @@
 
 <a href="https://fergustaylor.github.io/acutecareguide/"><img width="40%" height="40%" src="https://raw.githubusercontent.com/fergustaylor/acutecareguide/master/University-of-Dundee-Logos/STACKED%20LOGO/A4%20CMYK%20Logo%40100%25/A4_UoD_LOGO%20CMYK%40100%25%20%40300dpi.jpg" align="right" /></a>
 
-This is a project designed to update [**Tayside Acute Care Guide**](https://blogs.cmdn.dundee.ac.uk/acutecareguide/), a University of Dundee/Tayside resource.
+This is a project to update [**Tayside Acute Care Guide**](https://blogs.cmdn.dundee.ac.uk/acutecareguide/), a University of Dundee/Tayside resource.
 
 Project resources come from Dundee University:
 - [Graphics](https://www.dundee.ac.uk/brand/toolkit/logo/)
