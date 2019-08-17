@@ -1,39 +1,39 @@
-\contentsline {chapter}{Welcome!}{5}{chapter*.2}
+\contentsline {chapter}{}{5}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Resuscitation}{7}{chapter.1}
 \contentsline {section}{\numberline {1.1}Advanced Life Support}{7}{section.1.1}
-\contentsline {section}{\numberline {1.2}Major Incident}{7}{section.1.2}
-\contentsline {section}{\numberline {1.3}Haemodynamically Unstable Polytrauma (Code Red)}{7}{section.1.3}
-\contentsline {section}{\numberline {1.4}Adult Massive Haemorrhage Policy}{7}{section.1.4}
-\contentsline {section}{\numberline {1.5}Reversing oral anticoagulants in massive haemorrhage}{7}{section.1.5}
-\contentsline {chapter}{\numberline {2}Airway Problems}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Emergency Contacts}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Airway Assessment}{9}{section.2.2}
-\contentsline {section}{\numberline {2.3}Threaten the Airway}{9}{section.2.3}
-\contentsline {section}{\numberline {2.4}ENT Emergencies}{9}{section.2.4}
-\contentsline {chapter}{\numberline {3}Breathing}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}Useful Contacts}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Respiratory Emergencies}{12}{section.3.3}
-\contentsline {section}{\numberline {3.4}Non-invasive Ventilation (NIV)}{12}{section.3.4}
-\contentsline {section}{\numberline {3.5}How to set up NIV (extracted from BTS guideline)}{12}{section.3.5}
-\contentsline {section}{\numberline {3.6}Tuberculosis}{12}{section.3.6}
-\contentsline {section}{\numberline {3.7}Pneumothorax}{12}{section.3.7}
-\contentsline {section}{\numberline {3.8}Haemopneumothorax (haemothorax)}{12}{section.3.8}
-\contentsline {section}{\numberline {3.9}Non Respiratory causes of respiratory compensation}{12}{section.3.9}
-\contentsline {section}{\numberline {3.10}Assessment of Breathing}{12}{section.3.10}
-\contentsline {chapter}{\numberline {4}Cardiology and Vascular}{13}{chapter.4}
-\contentsline {chapter}{\numberline {5}Neurology / MFE}{15}{chapter.5}
-\contentsline {chapter}{\numberline {6}Renal \& Endocrine}{17}{chapter.6}
-\contentsline {chapter}{\numberline {7}Obstetrics \& Gynaecological}{19}{chapter.7}
-\contentsline {chapter}{\numberline {8}Psychiatric Emergencies}{21}{chapter.8}
-\contentsline {chapter}{\numberline {9}Surgical}{23}{chapter.9}
-\contentsline {chapter}{\numberline {10}Pain}{25}{chapter.10}
-\contentsline {chapter}{\numberline {11}Death}{27}{chapter.11}
-\contentsline {chapter}{\numberline {12}Poisons}{29}{chapter.12}
-\contentsline {chapter}{\numberline {13}Major Incident}{31}{chapter.13}
-\contentsline {chapter}{\numberline {14}Practical Procedures}{33}{chapter.14}
-\contentsline {chapter}{\numberline {15}Calculations}{35}{chapter.15}
-\contentsline {chapter}{\numberline {16}Paediatrics}{37}{chapter.16}
-\contentsline {chapter}{\numberline {17}Infection}{39}{chapter.17}
-\contentsline {chapter}{\numberline {18}Feedback}{41}{chapter.18}
-\contentsline {chapter}{\numberline {19}Credits}{43}{chapter.19}
+\contentsline {section}{\numberline {1.2}Major Incident}{9}{section.1.2}
+\contentsline {section}{\numberline {1.3}Haemodynamically Unstable Polytrauma (Code Red)}{9}{section.1.3}
+\contentsline {section}{\numberline {1.4}Adult Massive Haemorrhage Policy}{9}{section.1.4}
+\contentsline {section}{\numberline {1.5}Reversing oral anticoagulants in massive haemorrhage}{9}{section.1.5}
+\contentsline {chapter}{\numberline {2}Airway Problems}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Emergency Contacts}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Airway Assessment}{11}{section.2.2}
+\contentsline {section}{\numberline {2.3}Threaten the Airway}{11}{section.2.3}
+\contentsline {section}{\numberline {2.4}ENT Emergencies}{11}{section.2.4}
+\contentsline {chapter}{\numberline {3}Breathing}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{14}{section.3.1}
+\contentsline {section}{\numberline {3.2}Useful Contacts}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Respiratory Emergencies}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Non-invasive Ventilation (NIV)}{14}{section.3.4}
+\contentsline {section}{\numberline {3.5}How to set up NIV (extracted from BTS guideline)}{14}{section.3.5}
+\contentsline {section}{\numberline {3.6}Tuberculosis}{14}{section.3.6}
+\contentsline {section}{\numberline {3.7}Pneumothorax}{14}{section.3.7}
+\contentsline {section}{\numberline {3.8}Haemopneumothorax (haemothorax)}{14}{section.3.8}
+\contentsline {section}{\numberline {3.9}Non Respiratory causes of respiratory compensation}{14}{section.3.9}
+\contentsline {section}{\numberline {3.10}Assessment of Breathing}{14}{section.3.10}
+\contentsline {chapter}{\numberline {4}Cardiology and Vascular}{15}{chapter.4}
+\contentsline {chapter}{\numberline {5}Neurology / MFE}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6}Renal \& Endocrine}{19}{chapter.6}
+\contentsline {chapter}{\numberline {7}Obstetrics \& Gynaecological}{21}{chapter.7}
+\contentsline {chapter}{\numberline {8}Psychiatric Emergencies}{23}{chapter.8}
+\contentsline {chapter}{\numberline {9}Surgical}{25}{chapter.9}
+\contentsline {chapter}{\numberline {10}Pain}{27}{chapter.10}
+\contentsline {chapter}{\numberline {11}Death}{29}{chapter.11}
+\contentsline {chapter}{\numberline {12}Poisons}{31}{chapter.12}
+\contentsline {chapter}{\numberline {13}Major Incident}{33}{chapter.13}
+\contentsline {chapter}{\numberline {14}Practical Procedures}{35}{chapter.14}
+\contentsline {chapter}{\numberline {15}Calculations}{37}{chapter.15}
+\contentsline {chapter}{\numberline {16}Paediatrics}{39}{chapter.16}
+\contentsline {chapter}{\numberline {17}Infection}{41}{chapter.17}
+\contentsline {chapter}{\numberline {18}Feedback}{43}{chapter.18}
+\contentsline {chapter}{\numberline {19}Credits}{45}{chapter.19}

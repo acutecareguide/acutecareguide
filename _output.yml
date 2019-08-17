@@ -9,6 +9,8 @@ bookdown::gitbook:
         <li><a href="http://medicine.dundee.ac.uk/">University of Dundee</a></li>
         <li class="hover-item"><img src="uod_nhs_logo.png"></li>
     download: ["pdf", "epub"]
+    sharing: null
+    edit: https://github.com/fergustaylor/acutecareguide/edit/%s
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
